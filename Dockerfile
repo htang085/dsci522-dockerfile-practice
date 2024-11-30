@@ -1,14 +1,5 @@
 FROM quay.io/jupyter/minimal-notebook:afe30f0c9ad8
 
-USER root
-
-# Update and install required dependencies for compatibility
-RUN apt-get update --yes && apt-get install --yes \
-    gcc \
-    libstdc++6 && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
-
 # Copy the lock file
 COPY conda-linux-64.lock /tmp/conda-linux-64.lock
 
