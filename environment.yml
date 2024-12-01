@@ -6,6 +6,6 @@ dependencies:
   - numpy=1.26.4
   - pandas=2.2.2
   - python=3.11
-  - mamba=1.5.8
-  - conda=24.7.1
+  - conda-lock
+  - mamba
 prefix: /Users/candyhui/miniforge3/envs/dsci522-env
